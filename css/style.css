@@ -1,4 +1,81 @@
+html {
+  font-size: 3vw;
+}
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-family: 'system-ui', sans-serif;
+  letter-spacing: .1em;
+}
+
+h1 {
+  padding: 2.5rem;
+  font-size: 1.rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.preview {
+  width: 100vw;
+  height: 100vw;
+  background-size:cover;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.preview h1 {
+  text-align: left;
+  padding: 3rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+
+div.baku {
+  background-image: url('/images/baku.jpg');
+}
+
+div.london {
+  background-image: url('/images/london.png');
+}
+
+div.madrid {
+  background-image: url('/images/madrid.jpg');
+}
+
+div.rome {
+  background-image: url('/images/rome.jpg');
+}
+.container {
+  text-align: center;
+}
+
+@media screen and (min-width: 575px){
+   .preview {
+     width: 40vw;
+     height: 40vw;
+     margin: 0px .5rem 1rem;
+  }
+  h1 {
+    padding: 1.25rem;
+    font-size: 1.2rem;
+  }
+  .preview h1 {
+    font-size: 1.2rem;
+    padding: 1.35rem 1.1rem;
+  }
+}
+
+@media screen and (min-width: 991px){
+   .preview {
+     width: 15vw;
+     height: 15vw;
+     margin: 0px .25rem .5rem;
+  }
+  h1 {
+    padding: .625rem;
+    font-size: .6rem;
+  }
+  .preview h1 {
+    font-size: .6rem;
+    padding: .55rem .6rem;
+  }
 }
